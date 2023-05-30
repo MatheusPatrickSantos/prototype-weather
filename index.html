@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>APP WEATHER</title>
+</head>
+<body>
+    <div class="phone-container">
+        <div class="phone-top-container"></div>
+        
+        <p id="time"></p>
+
+        <div class="mid">
+            <h3 id="city"></h3>
+            <i class="sun" data-feather="sun"></i>
+            <h2 id="temp"></h2>
+            <h5 id="description">Hoje o dia será ensolarado</h5>    
+        </div>
+
+        <div class="week-container">
+            <div class="days-week">
+                <p class="week">Sun</p>
+                <i class="icon" data-feather="sun"></i>
+                <p class="temperature">33°</p>
+            </div>
+            <div class="days-week">
+                <p class="week">Mon</p>
+                <i class="icon" data-feather="sun"></i>
+                <p class="temperature">34°</p>
+            </div>
+            <div class="days-week">
+                <p class="week">Tue</p>
+                <i class="icon" data-feather="cloud-lightning"></i>
+                <p class="temperature">30°</p>
+            </div>
+            <div class="days-week">
+                <p class="week">Wed</p>
+                <i class="icon" data-feather="cloud-rain"></i>
+                <p class="temperature">29°</p>
+            </div>
+            <div class="days-week">
+                <p class="week">Thu</p>
+                <i class="icon" data-feather="cloud-rain"></i>
+                <p class="temperature">27°</p>
+            </div>
+            <div class="days-week">
+                <p class="week">Fri</p>
+                <i class="icon" data-feather="cloud-drizzle"></i>
+                <p class="temperature">28°</p>
+            </div>
+        </div>      
+    </div>
+    
+
+    <script>
+        feather.replace()
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

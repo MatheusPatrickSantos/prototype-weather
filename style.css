@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+body, input, select, button, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background-phone: rgba(45, 18, 194, 0.842);
+    --color-text: rgb(255, 255, 255);
+    --color-notch: rgb(0, 0, 0);
+    --color-clock: rgb(255, 255, 255);
+    --color-sun: rgb(255, 255, 255);
+    --color-background: rgb(208, 214, 219);
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--color-background);
+}
+
+.phone-container {
+    width: 300px;
+    height: 650px;
+    background: var(--color-background-phone);
+    border: 10px solid #000;
+    border-radius: 25px;
+    position: relative;
+}
+
+.phone-container .phone-top-container {
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    background: var(--color-notch);
+    border-radius: 0 0 30px 30px;
+    top: 0;
+    left: calc(50% - 50px);
+}
+
+.phone-container #time {
+    text-align: center;
+    padding-top: 40px;
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--color-text);
+}
+
+.phone-container .mid {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 20px 50px 20px;
+}
+
+.phone-container .mid h3 {
+    text-align: center;
+    font-weight: 300;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.phone-container .mid .sun {
+    stroke-width: 0.5;
+    width: 150px;
+    height: 150px;
+    color:  var(--color-sun);
+    margin: 0;
+}
+
+.phone-container .mid h2 {
+    color: var(--color-text);
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    padding-left: 20px;
+    margin: 0; 
+}
+
+.phone-container .mid h5 {
+    color: var(--color-text);
+    font-weight: 100;
+    margin: 0;
+}
+
+.phone-container .week-container .days-week .week, .icon, .temperature {
+    margin: 0;
+}
+
+.phone-container .days-week {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone-container .week-container {
+    display: flex;
+    width: 220px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: var(--color-text);
+}

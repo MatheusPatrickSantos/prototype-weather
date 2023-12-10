@@ -7,6 +7,14 @@ axios.get('https://api.hgbrasil.com/weather?format=json-cors&key=4a806c34&woeid=
         const temp = response.data.results.temp;
         // const recarrega = window.location.reload();
 
+                // Verifica se a página já foi recarregada
+                if (!sessionStorage.getItem('paginaRecarregada')) {
+                    // Recarrega a página
+                    window.location.reload();
+                    // Marca a página como recarregada na sessionStorage
+                    sessionStorage.setItem('paginaRecarregada', 'true');
+                }
+
         document.getElementById('time').innerHTML = time;
         document.getElementById('city').innerHTML = city;
         document.getElementById('description').innerHTML = description;

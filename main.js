@@ -1,4 +1,4 @@
-axios.get('https://api.hgbrasil.com/weather?format=json-cors&key=4a806c34&woeid=455871')
+axios.get('https://api.hgbrasil.com/weather?format=json-cors&key=e291d3c2&user_ip=remote')
     .then( response => {
 
         const time = response.data.results.time;
